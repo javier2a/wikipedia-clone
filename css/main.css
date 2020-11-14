@@ -1,0 +1,238 @@
+/* --------------------------------Fonts */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* END--------------------------------Fonts */
+body{
+  padding: var(--space-);
+}
+
+
+
+
+
+/* --------------------------------VARIABLES */
+:root{
+  /* Tipografia */
+  --bigest:32px;
+  --hight:27px;
+  --medium-hight:24px;
+  --normal:20px;
+  --small:15px;
+  /* Tipografia */
+  /* Espaciado */
+  --space-:10px;
+  --space-2x:20px;
+  --space-3x:30px;
+  /* Espaciado */
+}
+/* END--------------------------------VARIABLES */
+
+
+
+
+
+/* --------------------------------MAIN-TITLE */
+.section-title{
+  max-width: 270px;
+  margin: 40px  auto 0 auto;
+  text-align: center;
+}
+.section-title .main-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--medium-hight);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 var(--space-) 0;
+  letter-spacing: 2px;
+  
+}
+.section-title .main-title span{
+  font-weight: 300;
+  font-size: var(--bigest);
+}
+.section-title .main-subtitle{
+  font-size: var(--small);
+  font-weight: lighter;
+  margin: 0 0 12px 0;
+}
+/* END--------------------------------MAIN-TITLE */
+
+
+/* END--------------------------------MAIN-HERO */
+.main-hero{
+  position: relative;
+  max-width: 546px;
+  height: 325px;
+  margin: 0 auto;
+}
+
+.main-hero .main-hero-imaga-container{
+  max-width: 200px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.main-hero .main-hero-imaga-container img{
+  width: 100%;
+}
+.main-hero .langueage{
+  position: absolute;
+  width: 156px;
+  height: 45px;
+  font-family: 'Source Sans Pro',sans-serif;
+  
+}
+.main-hero .langueage a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  font-size: 16px;
+  justify-content: center;
+  color: #3366CC;
+}
+.main-hero .langueage strong:hover{
+  text-decoration: underline;
+}
+.main-hero .langueage small{
+  color: rgb(84,89,93);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.main-hero .langueage a small:hover{
+  text-decoration: none;
+}
+.main-hero .langueage-1{
+  top: 0;
+  right: 60%;
+}
+.main-hero .langueage-2{
+  top: 20%;
+  right: 70%;
+}
+.main-hero .langueage-3{
+  top: 40%;
+  right: 72%;
+}
+.main-hero .langueage-4{
+  top: 60%;
+  right: 70%;
+}
+.main-hero .langueage-5{
+  top: 80%;
+  right: 60%;
+}
+.main-hero .langueage-6{
+  top: 0;
+  left: 60%;
+}
+.main-hero .langueage-7{
+  top: 20%;
+  left: 70%;
+}
+.main-hero .langueage-8{
+  top: 40%;
+  left: 72%;
+}
+.main-hero .langueage-9{
+  top: 60%;
+  left: 70%;
+}
+.main-hero .langueage-10{
+  top: 80%;
+  left: 60%;
+}
+/* END--------------------------------MAIN-HERO */
+
+
+
+
+
+/* END--------------------------------MAIN-SEARCHBAR */
+
+.main-searchbar-container{
+  display: flex;
+  position: relative;
+  min-width: 334px;
+  max-width: 450px;
+  height: 44px;
+  margin: 0 auto;
+  border: 1px solid #A2A9B1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.main-searchbar-container .searchbar{
+  /* display: inline-block; */
+  width: 85%;
+  /* height: 26px; */
+  padding: 8px 12px;
+  /* outline: 2px solid #3366CC; */
+  /* outline: none; */
+  outline-width: -1px;
+  outline-color: #3366CC ;
+  border: none;
+  
+}
+.main-searchbar-container a{
+  text-decoration: none;
+}
+.main-searchbar-container .main-searchbar-icon{
+  /* display: inline-block; */
+  width: 56px;
+  display: flex;
+  background-color: #3366CC;
+  height: 44px;
+  /* width:100%; */
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  
+}
+.main-searchbar-container .main-searchbar-dropdown{
+  position: absolute;
+  width: 38px;
+  /* height: px; */
+  top: 30%;
+  right: 15%;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  color: #54595D;
+  outline: none;
+  /* font-weight: lighter; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  background-color: white;
+}
+.main-searchbar-container .main-searchbar-dropdown:hover{
+  cursor: pointer;
+  background-color:#f8f9fa ;
+  
+}
+.main-searchbar-container .main-searchbar-dropdown:focus{
+  outline: 1px solid #3366CC;
+}
+/* END--------------------------------MAIN-SEARCHBAR */
+
+
+
+
+
+
+/* --------------------------------MAIN CHANGE LANGUAGE */
+.main-change-langueage{
+  display: flex;
+  height: 36px;
+}
+
+
+/* END--------------------------------MAIN CHANGE LANGUAGE */
+
