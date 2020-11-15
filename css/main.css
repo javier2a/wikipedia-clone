@@ -175,7 +175,7 @@ body{
   padding: 8px 12px;
   /* outline: 2px solid #3366CC; */
   /* outline: none; */
-  outline-width: -1px;
+  outline-width: thick;
   outline-color: #3366CC ;
   border: none;
   
@@ -229,10 +229,76 @@ body{
 
 /* --------------------------------MAIN CHANGE LANGUAGE */
 .main-change-langueage{
-  display: flex;
-  height: 36px;
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  min-height: 36px;
+  margin: var(--space-2x) 0;
+  
+  /* padding: 0 20%; */
+  
 }
+.main-change-langueage .button-change-language-wraper .fa-language{
+  position: absolute;
+  top: 0;
+  left: 3%;
+  z-index: 4;
+}
+.main-change-langueage .button-change-language-wraper{
+  max-width: 275px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  height: 36px;
+  text-align: center;
+  
+}
+.main-change-langueage .button-change-language-wraper button{
+  background-color: #F8F9FA;
+  border: 1px solid #A2A9B1;
+  overflow: hidden;
+  outline-color: #3366CC;
+}
+.main-change-langueage .button-change-language-wraper button:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.main-change-langueage .button-change-language-wraper .button-change-language {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  color: #3366CC;
+  font-weight: bold;
+  z-index:3;
+}
+.main-change-langueage .button-change-language-wraper .fa-angle-down{
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 4;
+}
+.main-change-langueage .button-change-language-wraper i{
+  background-color: white;
+  color: #3366CC;
+  background: transparent;
 
+}
+.main-change-langueage .button-change-language-wraper i:hover{
+  cursor: pointer;
+  background: transparent;
+}
+ .main-change-langueage .hidden-lenguages {
+ position: absolute;
+  border-top: 1px solid #C8CCD1;
+  height: 1px;
+  width: auto;
+  margin: 0 20%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
 
 /* END--------------------------------MAIN CHANGE LANGUAGE */
 
