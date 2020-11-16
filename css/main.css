@@ -11,7 +11,10 @@
 body{
   padding: var(--space-);
 }
-
+a{
+  color: black;
+  text-decoration: none;
+}
 
 
 
@@ -301,4 +304,88 @@ body{
 }
 
 /* END--------------------------------MAIN CHANGE LANGUAGE */
+
+
+
+/* END-------------------------------- FOOTER */
+.footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* height: 100vh; */
+  max-width: 100%;
+  padding: 42px 10px 10px 10px;
+  border-top: 1px solid #C8CCD1;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.footer .project{
+  display: flex;
+  align-items: center;
+  max-width:350px ;
+  align-items: center;
+  justify-content: center;
+}
+.footer .project .project--image-container{
+  min-width: 42px;
+  max-width: 42px;
+  margin-right: 10px;
+}
+.footer .project .project--image-container img{
+  width: 100%;
+}
+.footer .project .project--description a{
+  color: #3366D6;
+}
+
+
+.footer .project__app{
+  min-width: 350px;
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 2;
+  grid-row-end:-1 ;
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+}
+.footer .project__app .project__app--image-container{
+  min-width: 42px;
+  max-width: 42px;
+  margin-right: 10px;
+}
+.footer .project__app .project__app--image-container img{
+  width: 100%;
+}
+.footer .project__app .image-container-strong{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color:#54595D;
+}
+.footer .project__app p{
+  max-width: 270px;
+  align-self: center;
+}
+.footer .project__app .storage-buttons{
+  display: flex;
+  justify-content: center;
+}
+.footer .project__app .storage-buttons a{
+  display: block;
+  width: 127px;
+}
+.footer .project__app .storage-buttons a img{
+  width: 100%;
+}
+
+
+
+
+
+/* END--------------------------------FOOTER */
 
