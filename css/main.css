@@ -9,7 +9,7 @@
 }
 /* END--------------------------------Fonts */
 body{
-  width: 100%;
+  /* width: 95vw; */
   padding: var(--space-);
 
 }
