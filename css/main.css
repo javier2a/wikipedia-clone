@@ -64,8 +64,18 @@ a{
   font-weight: lighter;
   margin: 0 0 12px 0;
 }
+.section-title-image-container{
+  display: none;
+  width: 52px;
+  margin: 0;
+}
+.section-title-image-container img{
+  width: 100%;
+}
 /* END--------------------------------MAIN-TITLE */
-
+.main-hero-hidden{
+  display: none;
+}
 
 /* END--------------------------------MAIN-HERO */
 .main-hero{
@@ -312,6 +322,8 @@ a{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   /* height: 100vh; */
   max-width: 100%;
   padding: 42px 10px 10px 10px;
@@ -320,6 +332,7 @@ a{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   justify-items: center;
   align-items: center;
+  grid-gap: var(--space-3x);
 
 }
 
@@ -327,8 +340,20 @@ a{
   display: flex;
   align-items: center;
   max-width:350px ;
+ 
   align-items: center;
   justify-content: center;
+ 
+}
+.footer  .project-container{
+  justify-self: flex-start;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .project-container:active{
+  border: 2px solid #3366D6;
 }
 .footer .project .project--image-container{
   min-width: 42px;
@@ -338,10 +363,9 @@ a{
 .footer .project .project--image-container img{
   width: 100%;
 }
-.footer .project .project--description a{
+.footer .project .project--description span{
   color: #3366D6;
 }
-
 
 .footer .project__app{
   min-width: 350px;
@@ -383,8 +407,20 @@ a{
   width: 100%;
 }
 
-
-
+.footer .footer-rights{
+  grid-column-start: 1;
+  grid-column-end:-1 ;
+}
+.footer .footer-rights a{
+  color: #3366D6;
+}
+.footer .footer-rights a:hover{
+  text-decoration: underline;
+  
+}
+.footer .footer-rights span{
+  font-size: 30px;
+}
 
 
 /* END--------------------------------FOOTER */
