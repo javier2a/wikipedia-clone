@@ -20,12 +20,19 @@
   }
   }
   @media (max-width:375px){
+    /* body{
+      width: 100%;
+    } */
     .section-title{
       display: flex;
       align-items: center;
     }
     .section-title-image-container{
       display: inline-block;
+    }
+    .main-searchbar-container{
+      min-width: initial;
+      margin: 0 auto;
     }
     .main-searchbar-container .main-searchbar-dropdown{
       right: 20%;
@@ -40,6 +47,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 40px;
       justify-items: center;
+      padding: 10px;
     }
     .main-hero-hidden .langueage strong{
       color:#3366CC;

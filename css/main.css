@@ -9,7 +9,9 @@
 }
 /* END--------------------------------Fonts */
 body{
+  width: 100%;
   padding: var(--space-);
+
 }
 a{
   color: black;
@@ -173,7 +175,7 @@ a{
 .main-searchbar-container{
   display: flex;
   position: relative;
-  min-width: 334px;
+  /* min-width: 334px; */
   max-width: 450px;
   height: 44px;
   margin: 0 auto;
